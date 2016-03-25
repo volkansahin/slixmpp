@@ -115,7 +115,7 @@ def punycode(domain):
                 raise StringprepError
 
         domain_parts.append(label)
-    return b'.'.join(domain_parts)
+    return domain.encode('utf-8','strict')
 
 logging.getLogger(__name__).warning('Using slower stringprep, consider '
                                     'compiling the faster cython/libidn one.')
