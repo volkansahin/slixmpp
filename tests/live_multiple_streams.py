@@ -4,9 +4,7 @@ from slixmpp.test import *
 
 
 class TestMultipleStreams(SlixTest):
-    """
-    Test that we can test a live stanza stream.
-    """
+
 
     def setUp(self):
         self.client1 = SlixTest()
